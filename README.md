@@ -6,7 +6,7 @@ Repository for laboratory homeworks - including requirements, files, implementat
 ## [Homework #1](#hw1) <a name="hw1"></a>
 
 - **Description** </br>
-  This assigment focuses on controlling each channel of an RGB LED using individual potentiometeres.
+  This assigment focuses on controlling each channel of an RGB LED using (3) individual potentiometeres.
   </br></br>
 
 - **Requirements** </br>
@@ -21,7 +21,7 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 - **Files**
 
-  - Homework 1 - RGB LED
+  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%201%20-%20RGB%20LED" target="_blank"> Homework 1 - RGB LED </a>
     </br></br>
 
 - **Setup picture**</br></br>
