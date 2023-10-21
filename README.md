@@ -5,12 +5,12 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 ## [Homework #1](#hw1) <a name="hw1"></a>
 
-- ### **_Description_** </br>
+- ### **_Description_**
 
   This assigment focuses on controlling each channel of an RGB LED using (3) individual potentiometeres.
   </br></br>
 
-- ### **_Requirements_** </br>
+- ### **_Requirements_**
 
   - **_Technical task_** </br>
     Use a separate potentiometer for controlling each color of the RGB LED: Red, Green and Blue. This control must leverage digital electronics. Specifically, you need to read the potentiometer’s value with Arduino and then write a mapped value to the LED pins.
