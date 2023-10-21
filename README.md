@@ -23,8 +23,8 @@ Repository for laboratory homeworks - including requirements, files, implementat
   - Homework 1 - RGB LED
     </br></br>
 
-* **Setup picture**<br>
-  <img src="./Homework 1 - RGB LED/rgbSetup.jpg" width="600" height="300">
+* **Setup picture**</br></br>
+  <img src="./Homework 1 - RGB LED/rgbSetup.jpg" width="500" height="300">
   </br></br>
 
 * **Functionality video:**
