@@ -21,7 +21,7 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 - **Files**
 
-  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%201%20-%20RGB%20LED" target="_blank"> Homework 1 - RGB LED </a>
+  - <a  target="_blank" href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%201%20-%20RGB%20LED"> Homework 1 - RGB LED </a>
     </br></br>
 
 - **Setup picture**</br></br>
@@ -29,4 +29,4 @@ Repository for laboratory homeworks - including requirements, files, implementat
   </br></br>
 
 - **Functionality video:**
-  <a href="https://youtu.be/50T870-A4no" target="_blank">Introduction to Robotics - Homework 1 (RGB LED) [YouTube]</a>
+  <a  target="_blank" href="https://youtu.be/50T870-A4no"> Introduction to Robotics - Homework 1 (RGB LED) [YouTube] </a>
