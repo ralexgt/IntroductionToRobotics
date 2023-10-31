@@ -73,7 +73,7 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 - ### **_Files_**
 
-  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%201%20-%20RGB%20LED"> Homework 2 - Elevator Simulator </a>
+  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%202%20-%20Elevator%20Simulator"> Homework 2 - Elevator Simulator </a>
     </br></br>
 
 - ### **_Setup picture_**
