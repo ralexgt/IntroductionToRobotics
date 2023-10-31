@@ -78,7 +78,7 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 - ### **_Setup picture_**
 
-  <img src="./Homework 2 - Elevator Simulator/elevatorSetup.jpg" width="600" height="400">
+  <img src="./Homework 2 - Elevator Simulator - WIP/elevatorSetup.jpg" width="600" height="400">
   </br></br>
 
 - ### **_Functionality video:_**
