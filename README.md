@@ -105,15 +105,23 @@ Repository for laboratory homeworks - including requirements, files, implementat
     - 7-segment display;
     - joystick;
     - Resistors and wires as needed;
-    - **_Components_** </br>
-    - 7-segment display;
-    - joystick;
-    - Resistors and wires as needed;
-      </br></br>
+
+- **_Table of neighbours_** </br>
+
+| &emsp;&emsp; Current segment      | UP  | DOWN | LEFT | RIGHT |
+| --------------------------------- | :-- | ---: | ---: | ----: |
+| &emsp;&emsp;&emsp;&emsp;&emsp; a  | N/A |    g |    f |     b |
+| &emsp;&emsp;&emsp;&emsp;&emsp; b  | a   |    g |    f |   N/A |
+| &emsp;&emsp;&emsp;&emsp;&emsp; c  | g   |    d |    e |    dp |
+| &emsp;&emsp;&emsp;&emsp;&emsp; d  | g   |  N/A |    e |     c |
+| &emsp;&emsp;&emsp;&emsp;&emsp; e  | g   |    d |  N/A |     c |
+| &emsp;&emsp;&emsp;&emsp;&emsp; f  | a   |    g |  N/A |     b |
+| &emsp;&emsp;&emsp;&emsp;&emsp; g  | a   |    d |  N/A |   N/A |
+| &emsp;&emsp;&emsp;&emsp;&ensp; dp | N/A |  N/A |    c |   N/A |
 
 - ### **_Files_**
 
-  - <a href=""> TBA </a>
+  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%203%20-%207segment%20drawing"> Homework 3 - 7segment drawing </a>
     </br></br>
 
 - ### **_Setup picture_**
