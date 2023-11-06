@@ -83,3 +83,45 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 - ### **_Functionality video:_**
   <a href="https://github.com/ralexgt/IntroductionToRobotics"> TBA </a>
+
+</br></br>
+
+## [Homework #3](#hw3) <a name="hw3"></a>
+
+- ### **_Description_**
+
+  We will use the joystick to control the position of
+  the segment and ”draw” on the display. The movement between segments
+  will be natural, meaning they should jump from the current position
+  only to neighbors, but without passing through ”walls”.
+  </br></br>
+
+- ### **_Requirements_**
+
+  - **_Technical task_** </br>
+    The initial position should be on the decimal point. The current
+    position always blinks (ignoring the state of the led). Use the joystick to move from one position to neighbouring leds. Short pressing the button toggles the segment state from ON to OFF or from OFF to ON. Long pressing the button resets the entire display by turning all the segments OFF and moving the current position to the decimal point.
+  - **_Components_** </br>
+    - 7-segment display;
+    - joystick;
+    - Resistors and wires as needed;
+    - **_Components_** </br>
+    - 7-segment display;
+    - joystick;
+    - Resistors and wires as needed;
+      </br></br>
+
+- ### **_Files_**
+
+  - <a href=""> TBA </a>
+    </br></br>
+
+- ### **_Setup picture_**
+
+  <img title="tba" src="./Homework 3 - 7segment drawing/hw3-intro-rob-setup.jpg" width="600" height="400">
+  </br></br>
+
+- ### **_Functionality video:_**
+  <a href="https://youtu.be/5F7jvzxB36o"> Introduction to Robotics - Homework 3 (7segment drawing) [YouTube] </a>
+
+</br></br>
