@@ -26,7 +26,7 @@ int statePinDP = 0;
 unsigned long currentBlinkMillis = 0;
 unsigned long lastBlinkMillis = 0;
 // each "blinkingTIme" miliseconds the current segment should switch states
-int blinkingTime = 300;
+const int blinkingTime = 300;
 // debounce time for joystick input
 const int joystickDebounce = 300;
 unsigned long lastJoyMove = 0;
@@ -51,10 +51,10 @@ int yValue = 0;
 // toggle when the joystick was moved
 bool joyMoved = false;
 // min and max thresholds for joystick's output values
-int minThreshold = 100;
+const int minThreshold = 100;
 /* maximum threshold is set high because when the switch is pressed, the x axis value goes gradually from ~500 to ~1020,
    this should reduce unwanted changes to currentSegment when pressing the switch*/
-int maxThreshold = 1015;
+const int maxThreshold = 1015;
 
 // number of seegments on the display (7 segments + 1 decimal point)
 const int segSize = 8;
