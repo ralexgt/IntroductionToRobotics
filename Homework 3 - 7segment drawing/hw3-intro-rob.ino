@@ -1,9 +1,8 @@
-// Declare all the joystick pins
-const int pinSW = 2; // 2 - digital pin connected to switch output (pushbutton)
-const int pinX = A0; // A0 - analog pin connected to X axis output
-const int pinY = A1; // A1 - analog pin connected to Y axis output
+const int pinSW = 2;
+const int pinX = A0;
+const int pinY = A1; 
 
-// declare all the segments' pins
+
 const int pinA = 11;
 const int pinB = 10;
 const int pinC = 9;
@@ -12,7 +11,7 @@ const int pinE = 7;
 const int pinF = 6;
 const int pinG = 5;
 const int pinDP = 4;
-// declare each segment's state
+
 int statePinA = 0;
 int statePinB = 0;
 int statePinC = 0;
@@ -22,17 +21,14 @@ int statePinF = 0;
 int statePinG = 0;
 int statePinDP = 0;
 
-// current and last blink times for led blink function
 unsigned long currentBlinkMillis = 0;
 unsigned long lastBlinkMillis = 0;
-// each "blinkingTIme" miliseconds the current segment should switch states
 const int blinkingTime = 300;
-// debounce time for joystick input
+
 const int joystickDebounce = 300;
 unsigned long lastJoyMove = 0;
 unsigned long currentTime = 0;
 
-// time variables for the interrupt function
 unsigned long lastInterruptTime = 0;
 unsigned long switchDebounce = 100;
 // if the switch is pressed more than "swResetTime" miliseconds the display should reset
@@ -44,11 +40,10 @@ unsigned long releaseTime = 0;
 byte state = LOW;
 byte swState = LOW;
 byte lastSwState = LOW;
-// variables for x and y axis on joystick
+
 int xValue = 0;
 int yValue = 0;
 
-// toggle when the joystick was moved
 bool joyMoved = false;
 // min and max thresholds for joystick's output values
 const int minThreshold = 100;
@@ -56,11 +51,10 @@ const int minThreshold = 100;
    this should reduce unwanted changes to currentSegment when pressing the switch*/
 const int maxThreshold = 1015;
 
-// number of seegments on the display (7 segments + 1 decimal point)
 const int segSize = 8;
-// segment states 1, 0 (on/off || high/low)
+// segment states 1, 0
 const int segStates = 2;
-// matrix for each led on the 7-segment display and it's desired state (initialized with 0)
+
 int segments[segSize][segStates] = {
   {pinDP, statePinDP}, 
   {pinG, statePinG}, 
@@ -80,19 +74,19 @@ int currentSegment = pinDP;
 const int pinsInMatrix = 0;
 const int statesInMatrix = 1;
 
-/* the x axis value goes gradually from ~500 to ~1020 so we wait as the jump to interrupt
+/* the x axis value goes to ~1020 so we wait as the jump to interrupt
  is not instant - this should reduce unwanted changes to currentSegment when pressing the switch */
 const int swTimeThreshold = 200;
 
 void setup() {
-  // initialize joystick's x, y axis and switch input pins
   pinMode(pinX, INPUT);
   pinMode(pinY, INPUT);
   pinMode(pinSW, INPUT_PULLUP);
-  // initialize all 7-segments led pins without changing states
+
   for (int i = 0; i < segSize; i++) {
     pinMode(segments[i][pinsInMatrix], OUTPUT);
   }
+
   attachInterrupt(digitalPinToInterrupt(pinSW), switchInterrupt, CHANGE);
   Serial.begin(9600);
 }
@@ -112,7 +106,7 @@ void loop() {
     joyMoved = false;
   } 
   blink(currentSegment);
-  //
+
   setOtherSegments(currentSegment);
 }
 
@@ -173,7 +167,6 @@ void setOtherSegments(int currentSegment){
   }
 }
 
-// when joystick is used, change the current segment according to the table for corresponding movement
 int changeCurrentSegment(){
   /* if the switch is pressed even slightly, x axis value goes to max; 
   check if the sw is pressed and wait for the program to jump to to interrupt */
