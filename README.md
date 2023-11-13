@@ -160,16 +160,16 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 - ### **_Files_**
 
-  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%201%20-%20RGB%20LED"> Homework 4 - Stopwatch </a>
+  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%204%20-%20Stopwatch"> Homework 4 - Stopwatch </a>
     </br></br>
 
 - ### **_Setup picture_**
 
-  <img src="./Homework 4 - Stopwatch/Intro To Robotics - HW5 - Stopwatch1.jpg" width="300" height="300">
+  <img src="./Homework 4 - Stopwatch/Intro To Robotics - HW5 - Stopwatch1.jpg" width="500" height="400">
 
   </br></br>
 
 - ### **_Functionality video:_**
-  <a href="https://youtu.be/50T870-A4no"> Introduction to Robotics - Homework 1 (RGB LED) [YouTube] </a>
+  <a href="https://youtu.be/50T870-A4no"> Introduction to Robotics - Homework 4 (Stopwatch) [YouTube] </a>
 
 </br></br>
