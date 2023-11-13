@@ -170,6 +170,6 @@ Repository for laboratory homeworks - including requirements, files, implementat
   </br></br>
 
 - ### **_Functionality video:_**
-  <a href="https://youtu.be/50T870-A4no"> Introduction to Robotics - Homework 4 (Stopwatch) [YouTube] </a>
+  <a href="https://youtu.be/cIefdwOfJhA"> Introduction to Robotics - Homework 4 (Stopwatch) [YouTube] </a>
 
 </br></br>
