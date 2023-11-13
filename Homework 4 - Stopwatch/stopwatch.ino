@@ -1,7 +1,7 @@
 // shift register
-const int latchPin = 11; // Connects to STCP (latch pin) on the shift register
-const int clockPin = 10; // Connects to SHCP (clock pin) on the shift register
-const int dataPin = 12; // Connects to DS (data pin) on the shift register
+const int latchPin = 11; 
+const int clockPin = 10; 
+const int dataPin = 12; 
 
 const int segD1 = 4;
 const int segD2 = 5;
@@ -44,6 +44,8 @@ byte paused = 1;
 byte lapMode = 0;
 byte reseted = 1;
 
+const int dpDisplay = 2;
+
 const int numberOfLaps = 4;
 int timeLaps[4] = {0, 0, 0, 0};
 int savedLaps = 0;
@@ -62,10 +64,11 @@ void setup() {
   for (int i = 0; i < stopWatchButtonsCount; i++){
     pinMode(stopWatchButtons[i], INPUT_PULLUP);
   }
+
   attachInterrupt(digitalPinToInterrupt(stopWatchButtons[0]), handlePause, FALLING);
   attachInterrupt(digitalPinToInterrupt(stopWatchButtons[1]), handleLap, FALLING);
-  Serial.begin(9600);
 }
+
 void loop() {
   if(!paused){
     if (millis() - lastIncrement > delayCount) {
@@ -75,6 +78,7 @@ void loop() {
     }
     writeNumber(numberDisplayed);
   }
+
   if(paused){
     resetStopWatch();
     if(!lapMode){
@@ -84,8 +88,8 @@ void loop() {
       writeNumber(timeLaps[currentLap]);
     }
   }
-  startingScreen();
 
+  startingScreen();
 }
 
 void writeReg(int digit) {
@@ -94,6 +98,7 @@ void writeReg(int digit) {
   digitalWrite(latchPin, HIGH);
 }
 
+// select the digit's display you want to change
 void activateDisplay(int displayNumber) {
   for (int i = 0; i < displayCount; i++) {
     digitalWrite(displayDigits[i], HIGH);
@@ -103,13 +108,13 @@ void activateDisplay(int displayNumber) {
 
 void writeNumber(int number) {
   int currentNumber = number;
-  // Start with the least significant digit
   int displayDigit = 3; 
   int lastDigit = 0;
+  // display all digits, even 0s
   while (currentNumber != 0 || displayDigit >= 0) {
     lastDigit = currentNumber % 10;
     activateDisplay(displayDigit);
-    if(displayDigit == 2){
+    if(displayDigit == dpDisplay){
       writeReg(byteEncodings[lastDigit] + 1);
     } else {
       writeReg(byteEncodings[lastDigit]);
@@ -132,6 +137,7 @@ void handlePause(){
   }
 }
 
+// adds a lap time if the stopwatch is running or jumps between current lap times if it was rest
 void handleLap(){
   static unsigned long interruptTime = 0;
   interruptTime = micros();
@@ -146,7 +152,7 @@ void handleLap(){
     if(reseted){
       lapMode = 1;
       // start current lap at -1 so after incrementation we will get the first element from savedLaps
-      if(currentLap == savedLaps - 1){
+      if(currentLap >= savedLaps - 1){
         currentLap = -1;
       }
       currentLap++;
@@ -165,6 +171,7 @@ void resetStopWatch(){
     }
     if(lapMode){
       savedLaps = 0;
+      currentLap = -1;
      for(int i = 0; i < 4; i++){
         timeLaps[i] = 0;
       }
