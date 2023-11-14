@@ -49,6 +49,7 @@ const int dpDisplay = 2;
 const int numberOfLaps = 4;
 int timeLaps[4] = {0, 0, 0, 0};
 int savedLaps = 0;
+int saveLap = 0;
 int currentLap = -1;
 
 void setup() {
@@ -143,11 +144,14 @@ void handleLap(){
   interruptTime = micros();
   if (interruptTime - lastInterruptTime > debounceDelay * 1000) {
     if(!paused){
-      if(savedLaps == 4){
-        savedLaps = 0;
+      if(saveLap == 4){
+        saveLap = 0;
       }
-      timeLaps[savedLaps] = numberDisplayed;
-      savedLaps++;
+      timeLaps[saveLap] = numberDisplayed;
+      saveLap++;
+      if(savedLaps < 4){
+        savedLaps++;
+      }
     }
     if(reseted){
       lapMode = 1;
@@ -171,6 +175,7 @@ void resetStopWatch(){
     }
     if(lapMode){
       savedLaps = 0;
+      saveLap = 0;
       currentLap = -1;
      for(int i = 0; i < 4; i++){
         timeLaps[i] = 0;
@@ -185,6 +190,3 @@ void startingScreen(){
     writeNumber(0);
   }
 }
-
-
-
