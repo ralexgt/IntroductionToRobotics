@@ -176,6 +176,8 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 ## [Homework #6](#hw6) <a name="hw6"></a>
 
+- ### **_Credits_**
+  "EIFR = (1 << INTF1) | (1 << INTF0);" - directly from https://forum.arduino.cc/t/left-over-variables-on-reset-or-strange-interrupt-behaviour/328693/9 - only first interrupt worked properly before
 - ### **_Description_**
 
   This assigment is a 8x8 matrix game! The game is composed of a player (blinking LED), walls (static LED's) and bombs. The joystick switch is a 'start game' button,
@@ -203,7 +205,7 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 - ### **_Files_**
 
-  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%201%20-%20RGB%20LED"> Homework 1 - RGB LED </a>
+  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%206%20-%20Bomberman"> Homework 1 - RGB LED </a>
     </br></br>
 
 - ### **_Setup picture_**
