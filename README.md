@@ -109,13 +109,13 @@ Repository for laboratory homeworks - including requirements, files, implementat
 - **_Table of neighbours_** </br>
 
 | Current segment         | UP  | DOWN | LEFT | RIGHT |
-| ----------------------- | :-- | ---: | ---: | ----: |
+| ----------------------- | :-- | ---: | ---: | ----: | --- |
 | &emsp; &emsp; &emsp; a  | N/A |    g |    f |     b |
 | &emsp; &emsp; &emsp; b  | a   |    g |    f |   N/A |
 | &emsp; &emsp; &emsp; c  | g   |    d |    e |    dp |
 | &emsp; &emsp; &emsp; d  | g   |  N/A |    e |     c |
 | &emsp; &emsp; &emsp; e  | g   |    d |  N/A |     c |
-| &emsp; &emsp; &emsp; f  | a   |    g |  N/A |     b |
+| &emsp; &emsp; &emsp; f  | a   |    g |  N/A |     b | g   |
 | &emsp; &emsp; &emsp; g  | a   |    d |  N/A |   N/A |
 | &emsp; &emsp; &emsp; dp | N/A |  N/A |    c |   N/A |
 
@@ -171,5 +171,47 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 - ### **_Functionality video:_**
   <a href="https://youtu.be/cIefdwOfJhA"> Introduction to Robotics - Homework 4 (Stopwatch) [YouTube] </a>
+
+</br></br>
+
+## [Homework #6](#hw6) <a name="hw6"></a>
+
+- ### **_Description_**
+
+  This assigment is a 8x8 matrix game! The game is composed of a player (blinking LED), walls (static LED's) and bombs. The joystick switch is a 'start game' button,
+  the button is used to place bombs and the joystick to move the player around. You can not move outside of the matrix boundries and you can not pass through walls.
+  All walls are destructable and the bomb has an area of effect of 1 LED in each direction. The game is concluded when you destroy all walls and you can restart the
+  game with the joystick switch.
+  </br></br>
+
+- ### **_Requirements_**
+
+  - **_Technical task_** </br>
+    Develop a small game on the 8x8 matrix. The game must have at least 3 types
+    of elements: player (blinks slowly), bombs/bullets (blinks fast), wall (doesn’t
+    blink). The basic idea is that you generate walls on the map and then
+    you move around with the player and destroy them.
+
+  - **_Components_** </br>
+    - Arduino Uno Board;
+    - Joystick;
+    - 8x8 LED Matrix;
+    - MAX7219;
+    - Resistors and capacitors as needed;
+    - Breadboard and connecting wires;
+      </br></br>
+
+- ### **_Files_**
+
+  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%201%20-%20RGB%20LED"> Homework 1 - RGB LED </a>
+    </br></br>
+
+- ### **_Setup picture_**
+
+  <img src="./Homework 6 - Bomberman/bombermanSetup.jpg" width="500" height="300">
+  </br></br>
+
+- ### **_Functionality video:_**
+  <a href="https://youtu.be/2MiOdwYz2tk"> Introduction to Robotics - Homework 6 (Matrix game) [YouTube] </a>
 
 </br></br>
