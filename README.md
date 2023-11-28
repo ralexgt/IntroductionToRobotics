@@ -205,7 +205,7 @@ Repository for laboratory homeworks - including requirements, files, implementat
 
 - ### **_Files_**
 
-  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%206%20-%20Bomberman"> Homework 1 - RGB LED </a>
+  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%206%20-%20Bomberman"> Homework 6 - Bomberman </a>
     </br></br>
 
 - ### **_Setup picture_**
