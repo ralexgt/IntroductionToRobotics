@@ -109,13 +109,13 @@ Repository for laboratory homeworks - including requirements, files, implementat
 - **_Table of neighbours_** </br>
 
 | Current segment         | UP  | DOWN | LEFT | RIGHT |
-| ----------------------- | :-- | ---: | ---: | ----: | --- |
+| ----------------------- | :-- | ---: | ---: | ----: |
 | &emsp; &emsp; &emsp; a  | N/A |    g |    f |     b |
 | &emsp; &emsp; &emsp; b  | a   |    g |    f |   N/A |
 | &emsp; &emsp; &emsp; c  | g   |    d |    e |    dp |
 | &emsp; &emsp; &emsp; d  | g   |  N/A |    e |     c |
 | &emsp; &emsp; &emsp; e  | g   |    d |  N/A |     c |
-| &emsp; &emsp; &emsp; f  | a   |    g |  N/A |     b | g   |
+| &emsp; &emsp; &emsp; f  | a   |    g |  N/A |     b |
 | &emsp; &emsp; &emsp; g  | a   |    d |  N/A |   N/A |
 | &emsp; &emsp; &emsp; dp | N/A |  N/A |    c |   N/A |
 
