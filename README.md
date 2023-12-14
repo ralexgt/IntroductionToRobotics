@@ -217,3 +217,44 @@ Repository for laboratory homeworks - including requirements, files, implementat
   <a href="https://youtu.be/2MiOdwYz2tk"> Introduction to Robotics - Homework 6 (Matrix game) [YouTube] </a>
 
 </br></br>
+
+## [Homework #7](#hw7) <a name="hw7"></a>
+
+- ### **_Description_**
+
+  This is the first checkpoint for our Matrix Game Project. I implemented a starting screen, gameplay starter, an end game and a menu to navigate between the game, game's settings and some info about the game, as well as some information during the game, displayed on the LCD (such as time played, walls left).
+  </br></br>
+
+- ### **_Requirements_**
+
+  - **_Technical task_** </br>
+    Add the following functionality for this checkpoint:
+
+    1. Intro message
+    2. Menu
+    3. End message
+    4. Gameplay details / end game screen
+
+  - **_Menu_** </br>
+    - Start game
+    - Settings
+      - LCD brightness control
+      - Matrix brightness control
+      - Back to main menu
+    - About
+      </br></br>
+
+- ### **_Files_**
+
+  - <a href="https://github.com/ralexgt/IntroductionToRobotics/tree/main/Homework%207%20-%20Matrix%20checkpoint"> Homework 7 - Matrix project checkpoint 1 </a>
+    </br></br>
+
+- ### **_Setup picture_**
+
+  <img src="./Homework 7 - Matrix checkpoint/setup_photo.jpg" width="500" height="300">
+  </br></br>
+
+- ### **_Functionality video:_**
+  <a href="https://youtu.be/jUd10wDJPGw"> Introduction to Robotics - Homework 7 (Matrix project cp 1) [YouTube] </a>
+
+</br></br>
